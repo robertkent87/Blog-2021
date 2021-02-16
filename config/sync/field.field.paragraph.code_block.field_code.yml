@@ -1,0 +1,19 @@
+uuid: c4a73bf6-9dfb-4ef4-800d-0337372c967c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_code
+    - paragraphs.paragraphs_type.code_block
+id: paragraph.code_block.field_code
+field_name: field_code
+entity_type: paragraph
+bundle: code_block
+label: Code
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

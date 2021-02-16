@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7256c37626939f3993c3839518a9e4de",
+    "content-hash": "a174c823c54c118d63f9855d2e1201a2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3682,28 +3682,52 @@
         },
         {
             "name": "drupal/root",
-            "version": "8.1.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/RobLoach/root.git",
-                "reference": "68447591dc9314b1c99b91bd5b5ac43be61f0f40"
+                "url": "https://git.drupalcode.org/project/root.git",
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobLoach/root/zipball/68447591dc9314b1c99b91bd5b5ac43be61f0f40",
-                "reference": "68447591dc9314b1c99b91bd5b5ac43be61f0f40",
-                "shasum": ""
+                "url": "https://ftp.drupal.org/files/projects/root-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "dbc2e142cafac355e3b5fc52f0ab75d9dcd53c31"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "drupal/core": "^8 || ^9"
             },
-            "type": "drupal-root",
-            "notification-url": "https://packagist.org/downloads/",
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1608568680",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0"
+                "GPL-2.0+"
             ],
-            "description": "The web root directory for Drupal.",
-            "time": "2016-05-17T08:03:39+00:00"
+            "authors": [
+                {
+                    "name": "Mohammad Abdul-Qader",
+                    "homepage": "https://www.drupal.org/user/3601770",
+                    "email": "mohd@sprintive.cpm"
+                },
+                {
+                    "name": "m.abdulqader",
+                    "homepage": "https://www.drupal.org/user/1281252"
+                }
+            ],
+            "description": "Drupal admin theme for Seeds distribution",
+            "homepage": "https://www.drupal.org/project/root",
+            "support": {
+                "source": "https://git.drupalcode.org/project/root"
+            }
         },
         {
             "name": "drupal/token",

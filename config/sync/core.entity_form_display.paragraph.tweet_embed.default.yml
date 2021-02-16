@@ -1,0 +1,25 @@
+uuid: 8179c5b9-9f35-4287-8686-7e3469d6da25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tweet_embed.field_link
+    - paragraphs.paragraphs_type.tweet_embed
+  module:
+    - link
+id: paragraph.tweet_embed.default
+targetEntityType: paragraph
+bundle: tweet_embed
+mode: default
+content:
+  field_link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

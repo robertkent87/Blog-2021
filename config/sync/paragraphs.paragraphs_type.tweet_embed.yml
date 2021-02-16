@@ -1,0 +1,10 @@
+uuid: 1bb9a2ab-1529-48aa-b740-f1e78c5e432f
+langcode: en
+status: true
+dependencies: {  }
+id: tweet_embed
+label: 'Tweet Embed'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

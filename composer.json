@@ -36,7 +36,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/realistic_dummy_content": "^2.0",
         "drupal/redirect": "^1.6",
-        "drupal/root": "^8.1",
+        "drupal/root": "1.6",
         "drupal/twig_extensions": "^2.0",
         "drupal/twig_field_value": "^2.0",
         "drupal/twig_tweak": "^2.6",
