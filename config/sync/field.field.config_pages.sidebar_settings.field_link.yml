@@ -1,0 +1,23 @@
+uuid: ea7869c9-bbf8-4b45-aca8-66492042cb10
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.sidebar_settings
+    - field.storage.config_pages.field_link
+  module:
+    - link
+id: config_pages.sidebar_settings.field_link
+field_name: field_link
+entity_type: config_pages
+bundle: sidebar_settings
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

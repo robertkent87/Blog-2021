@@ -1,0 +1,20 @@
+uuid: ee5c8148-1cdf-4c64-b238-0f78b8125d13
+langcode: en
+status: true
+dependencies:
+  theme:
+    - devblog
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: devblog_page_title
+theme: devblog
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+
+<section class="blog-list px-3 py-5 p-md-5">
+	<div class="container">
+
+		{% for row in rows %}
+            <div class="item{% if not loop.last %} mb-5{% endif %}">
+				{{- row.content -}}
+            </div>
+		{% endfor %}
+
+		<nav class="blog-nav nav nav-justified my-5">
+			<a class="nav-link-prev nav-item nav-link d-none rounded-left" href="#">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i>
+			</a>
+			<a class="nav-link-next nav-item nav-link rounded" href="blog-list.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i>
+			</a>
+		</nav>
+
+	</div>
+</section>

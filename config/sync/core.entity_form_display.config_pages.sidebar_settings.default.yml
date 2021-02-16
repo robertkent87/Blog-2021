@@ -1,0 +1,51 @@
+uuid: 72be6f6b-ab4a-498d-9895-aff2b851d2d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.sidebar_settings
+    - field.field.config_pages.sidebar_settings.field_description
+    - field.field.config_pages.sidebar_settings.field_image
+    - field.field.config_pages.sidebar_settings.field_link
+    - field.field.config_pages.sidebar_settings.field_social_links
+  module:
+    - link
+    - media_library
+id: config_pages.sidebar_settings.default
+targetEntityType: config_pages
+bundle: sidebar_settings
+mode: default
+content:
+  field_description:
+    weight: 1
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_image:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_social_links:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  label: true

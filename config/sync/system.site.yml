@@ -1,0 +1,14 @@
+uuid: 48990282-25a2-4b57-9031-eba26b12bd9a
+name: 'Robert Kent Blog'
+mail: robert@robert-kent.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

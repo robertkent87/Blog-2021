@@ -1,0 +1,19 @@
+uuid: 8d66c0c6-5b67-4130-99e2-5aaa565af687
+langcode: en
+status: true
+dependencies:
+  module:
+    - config_pages
+    - link
+id: config_pages.field_social_links
+field_name: field_social_links
+entity_type: config_pages
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 5
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

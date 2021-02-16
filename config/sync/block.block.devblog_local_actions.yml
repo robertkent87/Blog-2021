@@ -1,0 +1,20 @@
+uuid: e2134a24-6567-4c41-80fe-6171ce7bdc9e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - devblog
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: devblog_local_actions
+theme: devblog
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,11 @@
+global-styling:
+  css:
+    theme:
+      css/app.css: {}
+  js:
+    fontawesome/js/all.min.js: { header: true }
+    plugins/popper.min.js: {}
+    plugins/bootstrap/js/bootstrap.min.js: {}
+    js/app.js: {}
+  dependencies:
+    - core/jquery

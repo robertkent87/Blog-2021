@@ -1,0 +1,23 @@
+uuid: 1ba15afd-16b3-4aba-a65e-e0078d229ab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.sidebar_settings
+    - field.storage.config_pages.field_social_links
+  module:
+    - link
+id: config_pages.sidebar_settings.field_social_links
+field_name: field_social_links
+entity_type: config_pages
+bundle: sidebar_settings
+label: 'Social Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

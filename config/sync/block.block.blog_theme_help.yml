@@ -1,0 +1,22 @@
+uuid: a2e8fe62-bba6-441f-a74b-a8425be0043a
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - blog_theme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: blog_theme_help
+theme: blog_theme
+region: ''
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

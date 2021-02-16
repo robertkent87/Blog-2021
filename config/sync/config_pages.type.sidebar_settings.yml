@@ -1,0 +1,17 @@
+uuid: 36f17d56-e624-49c1-822d-4999cde72f3a
+langcode: en
+status: true
+dependencies: {  }
+id: sidebar_settings
+label: 'Sidebar settings'
+context:
+  show_warning: false
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: /admin/config/sidebar
+  weight: 0
+  description: ''
+token: false
