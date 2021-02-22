@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "46693e059437e760411ebd9a4b1784ce",
+    "content-hash": "8c3867226bd13672d39784aa155e4982",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2149,6 +2149,73 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/autocomplete_deluxe",
+            "version": "2.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/autocomplete_deluxe.git",
+                "reference": "2.0.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/autocomplete_deluxe-2.0.0-rc1.zip",
+                "reference": "2.0.0-rc1",
+                "shasum": "9f3c63862652862322184bb892cc1fa80c9f47c1"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-rc1",
+                    "datestamp": "1592389562",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Vardot",
+                    "homepage": "https://www.drupal.org/vardot",
+                    "role": "Maintenance for D8 and D9 versions"
+                },
+                {
+                    "name": "Mediacurrent",
+                    "homepage": "https://www.drupal.org/mediacurrent",
+                    "role": "Supporting organization"
+                },
+                {
+                    "name": "RajabNatshah",
+                    "homepage": "https://www.drupal.org/user/1414312"
+                },
+                {
+                    "name": "edwardchiapet",
+                    "homepage": "https://www.drupal.org/user/2354784"
+                },
+                {
+                    "name": "mpriscella",
+                    "homepage": "https://www.drupal.org/user/2354820"
+                },
+                {
+                    "name": "sepgil",
+                    "homepage": "https://www.drupal.org/user/512828"
+                }
+            ],
+            "description": "Enhanced autocomplete using Jquery UI autocomplete.",
+            "homepage": "https://www.drupal.org/project/autocomplete_deluxe",
+            "support": {
+                "source": "http://cgit.drupalcode.org/autocomplete_deluxe",
+                "issues": "https://www.drupal.org/project/issues/autocomplete_deluxe"
             }
         },
         {
@@ -10503,6 +10570,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/autocomplete_deluxe": 5,
         "drupal/gin": 15,
         "drupal/gin_login": 5,
         "drupal/gin_toolbar": 10
