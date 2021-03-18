@@ -5,5 +5,5 @@ package: Other
 core: 8.x
 libraries:
   - devblog/global-styling
- 
-base theme: stable
+  - devblog/global-scripts
+base theme: classy

@@ -2,6 +2,7 @@ global-styling:
   css:
     theme:
       css/app.css: {}
+global-scripts:
   js:
     fontawesome/js/all.min.js: { header: true }
     plugins/popper.min.js: {}
