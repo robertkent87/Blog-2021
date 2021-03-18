@@ -71,21 +71,22 @@
  */
 #}
 
-<div class="media">
-	{# <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="/{{ directory }}/images/blog/blog-post-thumb-1.jpg" alt="image"> #}
-	<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{{ file_url(node.field_image_media.entity.field_media_image.entity.fileuri) }}" alt="image">
+{% set image_uri = node.field_image_media.entity.field_media_image.entity.fileuri|default('') %}
+{% set reading_time = content.reading_time['#reading_time']|number_format %}
+
+<div class="media" {{ attributes }}>
+	{% if image_uri %}
+		<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{{ image_uri|image_style('thumbnail') }}" alt="image">
+	{% endif %}
 	<div class="media-body">
 		<h3 class="title mb-1">
 			<a href="{{ url }}">{{ label }}</a>
 		</h3>
 		<div class="meta mb-1">
 			<span class="date">Published {{ node.created.value|time_diff }}</span>
-			<span class="time">5 min read</span>
-			<span class="comment">
-				<a href="#">8 comments</a>
-			</span>
+			<span class="time">{{ reading_time }} min read</span>
 		</div>
-		<div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
+		<div class="intro">{{ node.field_excerpt.value }}</div>
 		<a class="more-link" href="{{ url }}">Read more &rarr;</a>
 	</div>
 	<!--//media-body-->
