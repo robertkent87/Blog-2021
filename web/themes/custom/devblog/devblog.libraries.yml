@@ -2,11 +2,14 @@ global-styling:
   css:
     theme:
       css/app.css: {}
+      plugins/highlight/styles/monokai-sublime.css: {}
 global-scripts:
   js:
     fontawesome/js/all.min.js: { header: true }
     plugins/popper.min.js: {}
     plugins/bootstrap/js/bootstrap.min.js: {}
+    '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js': { external: true }
     js/app.js: {}
+    js/script.js: {}
   dependencies:
     - core/jquery
