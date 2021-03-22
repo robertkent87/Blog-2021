@@ -109,6 +109,68 @@ function devblog_preprocess_node(array &$variables)
 {
     // Default to turning off byline/submitted.
     //$variables['display_submitted'] = FALSE;
+
+    //Get the created time of the current node
+    $node = \Drupal::request()->attributes->get('node');
+    $created_time = $node->getCreatedTime();
+
+    // Generate Next & Previous links
+    $previous = generatePrevious($created_time);
+    $next = generateNext($created_time);
+
+    if ($previous) {
+        $variables['prev_link'] = $previous;
+    }
+
+    if ($next) {
+        $variables['next_link'] = $next;
+    }
+}
+
+function generatePrevious($created_time)
+{
+    return generateNextPrevious('prev', $created_time);
+}
+
+function generateNext($created_time)
+{
+    return generateNextPrevious('next', $created_time);
+}
+
+function generateNextPrevious($direction = 'next', $created_time)
+{
+    if ($direction === 'next') {
+        $comparison_opperator = '>';
+        $sort = 'ASC';
+        // $display_text = t('Next Article');
+    } elseif ($direction === 'prev') {
+        $comparison_opperator = '<';
+        $sort = 'DESC';
+        // $display_text = t('Previous Article');
+    }
+
+    //Lookup 1 node younger (or older) than the current node
+    $query = \Drupal::entityQuery('node');
+    $next = $query->condition('created', $created_time, $comparison_opperator)
+        ->condition('type', 'article')
+        ->sort('created', $sort)
+        ->range(0, 1)
+        ->execute();
+
+    //If this is not the youngest (or oldest) node
+    if (!empty($next) && is_array($next)) {
+        $next = array_values($next);
+        $next = $next[0];
+
+        //Find the alias of the next node
+        $next_url = \Drupal::service('path.alias_manager')->getAliasByPath('/node/' . $next);
+
+        //Build the URL of the next node
+        $next_url = \Drupal\Core\Url::fromUri('base:/' . $next_url);
+
+        //Build the HTML for the next node
+        return $next_url->toString();
+    }
 }
 
 /**
