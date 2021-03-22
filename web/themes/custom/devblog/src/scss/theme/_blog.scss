@@ -138,3 +138,14 @@
 		
 	}
 }
+
+.media {
+	&--type-image {
+		justify-content: center;
+		margin: 3rem auto 4rem;
+
+		img {
+			box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+		}
+	}
+}

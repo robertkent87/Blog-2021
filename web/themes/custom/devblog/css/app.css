@@ -11286,7 +11286,6 @@ h6 {
 
 .blog-list .item .more-link {
   font-size: 0.8125rem;
-  text-align: left;
 }
 
 .meta {
@@ -11411,6 +11410,15 @@ h6 {
 
 .blog-post .blockquote p {
   font-size: 1.5rem;
+}
+
+.media--type-image {
+  justify-content: center;
+  margin: 3rem auto 4rem;
+}
+
+.media--type-image img {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
 /* ============= About Page ============= */
